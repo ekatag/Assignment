@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    .odd{background-color: lightblue;} 
+    .even{background-color: #95B9C7;} 
+</style>
+<script type="text/javascript">
+    function alternate(id){ 
+  if(document.getElementsByTagName){  
+    var table = document.getElementById(id);   
+    var rows = table.getElementsByTagName("tr");   
+    for(i = 0; i < rows.length; i++){           
+ //manipulate rows 
+      if(i % 2 == 0){ 
+       rows[i].className = "even"; 
+      }else{ 
+       rows[i].className = "odd"; 
+      }       
+    } 
+  } 
+}
+</script>
+</head>
+<body onload="alternate('thetable')"> 
+	<table id="thetable" width="600">
+    <tr>
+        <th>S.N.</th>
+        <th>Name</th>
+        <th>Image</th>
+    </tr>
+    <tr> 
+        <td>1</td>
+        <td>Burger</td>
+        <td><img src="1.jpg" height="100" width="300"></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Pizza</td>
+        <td><img src="2.jpg" height="100" width="300"></td>
+    </tr>
+    <tr> 
+        <td>3</td>
+        <td>Fish</td>
+        <td><img src="3.jpg" height="100" width="300"></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Noodles</td>
+        <td><img src="4.jpg" height="100" width="300"></td>
+    </tr>
+</table>
+</body>
+</html>
