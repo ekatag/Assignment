@@ -1,0 +1,146 @@
+<html>
+<head>
+	<title>About us</title>
+<style>
+	#wholepage{margin-left:auto;margin-right:auto;width:1000px;position:relative;margin-top:65px;}
+
+	#header{
+			width:1000px;background-color:lightblue;height:100px;position:absolute;left:0px;top:0px;font-weight: bold;}
+	#header_contents{
+			width:654px;float:left;position:absolute;left:400px;top:400px;overflow:hidden;
+			margin-top:5px;}
+	#Page_contents{
+			width:654px;float:left;position:absolute;left:150px;top:450px;overflow:hidden;margin-top:5px;}
+	#footer{
+			width:1000px;background-color:lightblue;float:left;position:relative;left:0px;top:200px;}
+
+	.quote{
+		top:300px;position:absolute;
+		background-color:lightgrey;
+		width: 150px; height:250px;
+		border: 15px solid  lightblue;
+		padding: 30px;left: 820px;
+
+	}
+
+    body{font-size: 16px;font-family: Arial,sans-serif; background-color: #E0FFFF;}
+    ul { padding: 0; list-style: none;background: #f2f2f2;border-radius: 15px; }
+    ul li {display: inline-block; }
+    ul li a { display: block;padding: 20px 30px;color: #333;text-decoration: none; }
+    ul li a:hover { color: #fff;background: #939393;}
+
+    table{
+    	border-collapse: collapse;
+    	width: 100%;
+    }
+    th,td{
+    	padding: 8px;
+    	text-align: left;
+    	border-bottom: 1px;
+    }
+</style>
+</head>
+<body>
+	<div id="wholepage">
+		<div id="header">
+			<h1 align="center">FOODWAY</h1>
+	<br><br>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallary.html">Shop</a></li>
+    <li><a href="About.html">About Me</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="FoodWay.html">FOODWAY</a></li>
+    <li><a href="https://www.facebook.com/FoodNetwork/">Facebook</a></li>
+    <li><a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU">Youtube</a></li>
+</ul>
+</nav>
+</div>
+<img  border="6 solid" src="cook1.png" hspace="275" height="200" width="400"  vspace="200" >
+<div class="quote">
+	<div><br><br><br><br>“Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.”
+<br> ― Ruth Reichl<br>
+</div>
+</div>
+<div id="header_contents">
+	<h1>My Story!</h1>
+</div>
+<div id="page_contents">
+	<p><I>I never went to any culinary School. For me it was not worth the tens of thousand of dollars. I studied science for my higher studies,However I ended up being a chef. I loved cooking. People around me were happy eating my food. I loved experimenting upon various elements of the food, sometimes it used to turn into masterpiece while many times I had to throw the food. I started cooking as a hobby later turned into my passion. I then at my free time applied for a part time job in a famous resturant, it was my aunt's resturant. I got to learn many aspect of cooking. That was the turning point of my life, I started taking cooking seriously. As I said I have experimenting habit, during a experiment the food turned to be the most perfect dish and main served dish in the resturant.</I></p>
+	<p><I>So, One of the my co-worker we formed a strong bond and later we started our way to FoodWay which turned out to be the best decisions of my and my co-worker's life.We decided to give our full focus on FoodWay and then here we have the success. I love how people appreciate our work.That gives me more energy and motivation to make the best food out of the rest.</I></p>
+</div>
+<div id="footer">
+	<table>
+		<tr>
+			<th>Shop:</th>
+			<th>Opening hours:</th>
+			<th>Address:</th>
+			<th>Get It Fresh:</th>
+		</tr>
+		<tr>
+			<th><a href="index.html">Home</a></th>
+			<th>Mon-fri:7am-12pm</th>
+			<th>Namuna Basti</th>
+			<th>Email-<input type="email" name="mail"></th>
+		</tr>
+		<tr>
+			<th><a href="#">FAQ</a></th>
+			<th>Saturday:9am-8pm</th>
+			<th>Kathmandu,Provience 3</th>
+			<th align="center">
+	    	<input type="submit" value="Log in"></th>
+		</tr>
+		<tr>
+			<th><a href="#">Shipping/pick up</a></th>
+			<th>Sunday:9am-11pm</th>
+			<th>Tel:016213575</th>
+		</tr>
+
+		<tr>
+			<th><a href="#">Store Policy</a></th>
+		</tr>
+		<tr>
+			<th><a href="Contact.html">Contact</a></th>
+		</tr>
+	</table>
+<br>
+		----@2024 by FOODWAY----<br><br>
+		<a href="ekata.ghimire333@gmail.com" TARGET="_blank">ekata.ghimire333@gmail.com</a>
+		<p align="center"><a href="https://www.facebook.com/FoodNetwork/"><img src= "facebook.png" height= "30" width = "30"></a>
+			<a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU"><img src= "youtube.png" height= "30" width = "30"></a>
+        </p>
+        <body onload="clockStart()">
+	<div id="clock">
+		<span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>		
+	</div>
+	<script>
+		var timerId; //current timer of started
+		function clockStart(){
+			if (timerId)
+				return;
+			timerId = setInterval(update,1000);
+			update();
+		}
+		function update(){
+			var date= new Date();
+			var hours= date.getHours();
+			if (hours<10)
+				hours='0'+hours;
+			document.getElementById("hour").innerHTML=hours;
+
+			var minutes= date.getMinutes();
+			if (minutes<10)
+				minutes='0'+minutes;
+			document.getElementById("min").innerHTML=minutes;
+
+			var seconds= date.getSeconds();
+			if (seconds<10)
+				seconds='0'+seconds;
+			document.getElementById("sec").innerHTML=seconds;
+		}
+	</script>
+</div>
+</div>
+</div>
+</body>

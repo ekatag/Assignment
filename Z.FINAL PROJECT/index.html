@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main home page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+
+#wholepage{margin-left:auto;margin-right:auto;width:1000px;position:relative;margin-top:65px;}
+
+  #header{
+      width:1000px;background-color:lightblue;height:100px;position:absolute;left:0px;top:0px;font-weight: bold;}
+  #footer{
+      width:1000px;background-color:lightblue;float:left;position:relative;left:0px;top:20px;}
+
+    .box{
+      size:10;
+      color: #fff;
+      background: #7dc765;
+      padding: 30px;
+  }
+  .mySlides {display:none;}
+    body{font-size: 16px;font-family: Arial,sans-serif; background-color: #E0FFFF;}
+    ul { padding: 0; list-style: none;background: #f2f2f2;border-radius: 15px; }
+    ul li {display: inline-block; }
+    ul li a { display: block;padding: 20px 30px;color: #333;text-decoration: none; }
+    ul li a:hover { color: #fff;background: #939393;}
+
+    table{
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th,td{
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px;
+    }
+    p{
+      border: 5px solid#7dc765;
+      background: lightblue;
+      padding:40px;
+      margin: 100px;
+    }
+</style>
+</head>
+
+<body>
+
+  <div id="wholepage">
+    <div id="header">
+      <h1 align="center">FOODWAY</h1>
+  <br><br>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallary.html">Shop</a></li>
+    <li><a href="About.html">About Me</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="FoodWay.html">FOODWAY</a></li>
+    <li><a href="https://www.facebook.com/FoodNetwork/">Facebook</a></li>
+    <li><a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU">Youtube</a></li>
+</ul>
+</nav>
+</div>
+<div>
+<br><br>
+<div class="w3-content w3-section" style="max-width:1000px" style="max-height: 500px">
+  <img class="mySlides" src="image2.jpg" style="width:100%" style="height:50%">
+  <img class="mySlides" src="image9.jpg" style="width:100%" style="height:50%">
+  <img class="mySlides" src="image6.jpg" style="width:100%" style="height:50%">
+  <img class="mySlides" src="image14.jpg" style="width:100%" style="height:50%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div align="center" >
+  <p>Around the nook and corner of the Matatirtha you will find people loving our dishes. Burgers to pizzas to simple sandwich are decilious.We have become the first choice of the people visiting around the place. We even home deliver the food with minimal service charge. Any inconvience caused to customer, we will compensate.</p>
+</div>
+<div class="box">
+  <div align="center" >Food to be delivered right to your door!!! </div>
+</div>
+
+<img src="image2.jpg" alt="Background" height="150" width="170" align="left" vspace="50" >
+
+<img src="image3.jpg" alt="Background" hspace="80" height="150" width="150" align="right" vspace="50" >
+
+<img src="image4.jpg" alt="Background" hspace="80" height="150" width="170" align="center" vspace="50" >
+
+<img src="image5.jpg" alt="Background" height="150" width="150" align="center" vspace="50" >
+
+<div align="center">DESERTS ARE YOUR FAVOURITE RIGHT?</div>
+
+
+<div id="footer">
+  <table>
+    <tr>
+      <th>Shop:</th>
+      <th>Opening hours:</th>
+      <th>Address:</th>
+      <th>Get It Fresh:</th>
+    </tr>
+    <tr>
+      <th><a href="index.html">Home</a></th>
+      <th>Mon-fri:7am-12pm</th>
+      <th>Namuna Basti</th>
+      <th>Email-<input type="email" name="mail"></th>
+    </tr>
+    <tr>
+      <th><a href="#">FAQ</a></th>
+      <th>Saturday:9am-8pm</th>
+      <th>Kathmandu,Provience 3</th>
+      <th align="center">
+        <input type="submit" value="Log in"></th>
+    </tr>
+    <tr>
+      <th><a href="#">Shipping/pick up</a></th>
+      <th>Sunday:9am-11pm</th>
+      <th>Tel:016213575</th>
+    </tr>
+
+    <tr>
+      <th><a href="#">Store Policy</a></th>
+    </tr>
+    <tr>
+      <th><a href="Contact.html">Contact </a></th>
+    </tr>
+  </table>
+<br>
+    ----@2024 by FOODWAY----<br><br>
+    <a href="ekata.ghimire333@gmail.com" TARGET="_blank">ekata.ghimire333@gmail.com</a>
+    <div align="center">
+    <a href="https://www.facebook.com/FoodNetwork/"><img src= "facebook.png" height= "30" width = "30"></a>
+      <a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU"><img src= "youtube.png" height= "30" width = "30"></a>
+    </div>
+    <body onload="clockStart()">
+  <div id="clock">
+    <span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>   
+  </div>
+  <script>
+    var timerId; //current timer of started
+    function clockStart(){
+      if (timerId)
+        return;
+      timerId = setInterval(update,1000);
+      update();
+    }
+    function update(){
+      var date= new Date();
+      var hours= date.getHours();
+      if (hours<10)
+        hours='0'+hours;
+      document.getElementById("hour").innerHTML=hours;
+
+      var minutes= date.getMinutes();
+      if (minutes<10)
+        minutes='0'+minutes;
+      document.getElementById("min").innerHTML=minutes;
+
+      var seconds= date.getSeconds();
+      if (seconds<10)
+        seconds='0'+seconds;
+      document.getElementById("sec").innerHTML=seconds;
+    }
+  </script>
+</body>
+</div>
+</div>
+</div>
+</body>
+</html>

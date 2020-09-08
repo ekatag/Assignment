@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title>FoodWay</title>
+<style>
+	#wholepage{margin-left:auto;margin-right:auto;width:1000px;position:relative;margin-top:65px;}
+
+	#header{
+			width:1000px;background-color:lightblue;height:125px;position:absolute;left:0px;top:0px;font-weight: bold;}
+	#header_contents{
+			width:654px;float:left;position:absolute;left:320px;top:175px;overflow:hidden;
+			margin-top:5px;}
+
+	#footer{
+			width:1000px;background-color:lightblue;float:left;position:relative;left:0px;top:20px;}
+
+	.quote{
+		top:685px;position:absolute;
+		left:285px;
+		background-color:lightgrey;
+		width: 400px;
+		border: 15px solid  lightblue;
+		padding: 30px;
+
+	}
+
+
+    body{font-size: 16px;font-family: Arial,sans-serif; background-color: #E0FFFF;}
+    ul { padding: 0; list-style: none;background: #f2f2f2;border-radius: 15px; }
+    ul li {display: inline-block; }
+    ul li a { display: block;padding: 20px 30px;color: #333;text-decoration: none; }
+    ul li a:hover { color: #fff;background: #939393;}
+
+    table{
+    	border-collapse: collapse;
+    	width: 100%;
+    }
+    th,td{
+    	padding: 8px;
+    	text-align: left;
+    	border-bottom: 1px;
+    }
+</style>
+</head>
+<body>
+	<div id="wholepage">
+		<div id="header">
+			<h1 align="center">FOODWAY</h1>
+	<br><br>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallary.html">Shop</a></li>
+    <li><a href="About.html">About Me</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="FoodWay.html">FOODWAY</a></li>
+    <li><a href="https://www.facebook.com/FoodNetwork/">Facebook</a></li>
+    <li><a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU">Youtube</a></li>
+</ul>
+</nav>
+</div>
+
+<div id="header_contents">
+	<h1>Want to know about us more?</h1>
+</div>
+<img src="r1.jpg" alt="Background" hspace="75" height="400" width="850" align="center" vspace="250" >
+<div class="quote">
+	<div>“Humor keeps us alive. Humor and food. Don't forget food. You can go a week without laughing.”<br>
+    ― Joss Whedon </div>
+</div>
+<img src="r2.jpg" alt="Background" hspace="75" height="400" width="850" align="center">
+<br><br>
+<img src="r3.jpg" alt="Background" hspace="150" height="375" width="700" align="center">
+<div id="footer">
+	<table>
+		<tr>
+			<th>Shop:</th>
+			<th>Opening hours:</th>
+			<th>Address:</th>
+			<th>Get It Fresh:</th>
+		</tr>
+		<tr>
+			<th><a href="index.html">Home</a></th>
+			<th>Mon-fri:7am-12pm</th>
+			<th>Namuna Basti</th>
+			<th>Email-<input type="email" name="mail"></th>
+		</tr>
+		<tr>
+			<th><a href="#">FAQ</a></th>
+			<th>Saturday:9am-8pm</th>
+			<th>Kathmandu,Provience 3</th>
+			<th align="center">
+	    	<input type="submit" value="Log in"></th>
+		</tr>
+		<tr>
+			<th><a href="#">Shipping/pick up</a></th>
+			<th>Sunday:9am-11pm</th>
+			<th>Tel:016213575</th>
+		</tr>
+
+		<tr>
+			<th><a href="#">Store Policy</a></th>
+		</tr>
+		<tr>
+			<th><a href="Contact.html">Contact</a></th>
+		</tr>
+	</table>
+<br>
+		----@2024 by FOODWAY----<br><br>
+		<a href="ekata.ghimire333@gmail.com" TARGET="_blank">ekata.ghimire333@gmail.com</a>
+		<p align="center"><a href="https://www.facebook.com/FoodNetwork/"><img src= "facebook.png" height= "30" width = "30"></a>
+			<a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU"><img src= "youtube.png" height= "30" width = "30"></a>
+
+		</p>
+		<body onload="clockStart()">
+	<div id="clock">
+		<span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>		
+	</div>
+	<script>
+		var timerId; //current timer of started
+		function clockStart(){
+			if (timerId)
+				return;
+			timerId = setInterval(update,1000);
+			update();
+		}
+		function update(){
+			var date= new Date();
+			var hours= date.getHours();
+			if (hours<10)
+				hours='0'+hours;
+			document.getElementById("hour").innerHTML=hours;
+
+			var minutes= date.getMinutes();
+			if (minutes<10)
+				minutes='0'+minutes;
+			document.getElementById("min").innerHTML=minutes;
+
+			var seconds= date.getSeconds();
+			if (seconds<10)
+				seconds='0'+seconds;
+			document.getElementById("sec").innerHTML=seconds;
+		}
+	</script>
+</div>
+</div>
+</div>
+</body>

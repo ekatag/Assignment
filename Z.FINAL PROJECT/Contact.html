@@ -1,0 +1,200 @@
+<html>
+<head>
+	<title>Contact</title>
+<style>
+	#wholepage{margin-left:auto;margin-right:auto;width:1000px;position:relative;margin-top:65px;}
+
+	#header{
+			width:1000px;background-color:lightblue;height:100px;position:absolute;left:0px;top:0px;font-weight: bold;}
+	#header_contents{
+			width:654px;float:left;position:absolute;left:420px;top:175px;overflow:hidden;margin-top:5px;}
+
+	#footer{
+			width:1000px;background-color:lightblue;float:left;position:relative;left:0px;top:20px;}
+
+    body{font-size: 16px;font-family: Arial,sans-serif; background-color: #E0FFFF;}
+    ul { padding: 0; list-style: none;background: #f2f2f2;border-radius: 15px; }
+    ul li {display: inline-block; }
+    ul li a { display: block;padding: 20px 30px;color: #333;text-decoration: none; }
+    ul li a:hover { color: #fff;background: #939393;}
+
+    table{
+    	border-collapse: collapse;
+    	width: 100%;
+    }
+    th,td{
+    	padding: 8px;
+    	text-align: left;
+    	border-bottom: 1px;
+    }
+
+	input[type=text], select, textarea {
+  		width: 100%;
+  		padding: 12px;
+  		border: 1px solid #ccc;
+ 		border-radius: 4px;
+  		box-sizing: border-box;
+  		margin-top: 6px;
+  		margin-bottom: 16px;
+  		resize: vertical;
+	}
+
+	input[type=submit] {
+  		background-color: #4CAF50;
+  		color: white;
+  		padding: 10px 16px;
+  		border: none;
+  		border-radius: 4px;
+  		cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+  		background-color: #45a049;
+	}
+
+	.container {
+ 		 border-radius: 5px;
+  		background-color: #f2f2f2;
+  		padding: 5px;
+}
+</style>
+<script>
+function validateForm() {
+  if (document.myForm.fname.value==""){
+				alert("Please Provide your First name!");document.myForm.fname.focus();return false;
+  }
+  if (document.myForm.lname.value==""){
+				alert("Please Provide your last name!");document.myForm.lname.focus();return false;
+  }
+  if (document.myForm.email.value==""){
+				alert("Please Provide your email!");document.myForm.email.focus();return false;
+  }
+  if (document.myForm.City.value==""){
+				alert("Please Provide your City!");document.myForm.City.focus();return false;
+  }
+  return(true);
+}
+</script>
+
+
+</head>
+<body>
+	<div id="wholepage">
+		<div id="header">
+			<h1 align="center">FOODWAY</h1>
+	<br><br>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallary.html">Shop</a></li>
+    <li><a href="About.html">About Me</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="FoodWay.html">FOODWAY</a></li>
+    <li><a href="https://www.facebook.com/FoodNetwork/">Facebook</a></li>
+    <li><a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU">Youtube</a></li>
+</ul>
+</nav>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
+<div id="header_contents">
+	<h1>Contact us</h1>
+</div>
+<br><br><br><br>
+<div class="container">
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    First Name
+    <input type="text" name="fname" placeholder="Your name..">
+
+    Last Name
+    <input type="text" name="lname" placeholder="Your last name..">
+
+    Email
+    <input type="text" name="email" placeholder="Your email please..">
+
+    City
+    <input type="text" name="City" placeholder="Your City please..">
+
+    Any suggestions to our servies?
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<img src="map.png" alt="Background" hspace="90" height="500" width="850" align="center" vspace="80" >
+
+<div id="footer">
+	<table>
+		<tr>
+			<th>Shop:</th>
+			<th>Opening hours:</th>
+			<th>Address:</th>
+			<th>Get It Fresh:</th>
+		</tr>
+		<tr>
+			<th><a href="index.html">Home</a></th>
+			<th>Mon-fri:7am-12pm</th>
+			<th>Namuna Basti</th>
+			<th>Email-<input type="email" name="mail"></th>
+		</tr>
+		<tr>
+			<th><a href="#">FAQ</a></th>
+			<th>Saturday:9am-8pm</th>
+			<th>Kathmandu,Provience 3</th>
+			<th align="center">
+	    	<input type="submit" value="Log in"></th>
+		</tr>
+		<tr>
+			<th><a href="#">Shipping/pick up</a></th>
+			<th>Sunday:9am-11pm</th>
+			<th>Tel:016213575</th>
+		</tr>
+
+		<tr>
+			<th><a href="#">Store Policy</a></th>
+		</tr>
+		<tr>
+			<th><a href="Contact.html">Contact </a></th>
+		</tr>
+	</table>
+<br>
+		----@2024 by FOODWAY----<br><br>
+		<a href="ekata.ghimire333@gmail.com" TARGET="_blank">ekata.ghimire333@gmail.com</a>
+		<p align="center"><a href="https://www.facebook.com/FoodNetwork/"><img src= "facebook.png" height= "30" width = "30"></a>
+			<a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU"><img src= "youtube.png" height= "30" width = "30"></a>
+
+		</p>
+		<body onload="clockStart()">
+	<div id="clock">
+		<span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>		
+	</div>
+	<script>
+		var timerId; //current timer of started
+		function clockStart(){
+			if (timerId)
+				return;
+			timerId = setInterval(update,1000);
+			update();
+		}
+		function update(){
+			var date= new Date();
+			var hours= date.getHours();
+			if (hours<10)
+				hours='0'+hours;
+			document.getElementById("hour").innerHTML=hours;
+
+			var minutes= date.getMinutes();
+			if (minutes<10)
+				minutes='0'+minutes;
+			document.getElementById("min").innerHTML=minutes;
+
+			var seconds= date.getSeconds();
+			if (seconds<10)
+				seconds='0'+seconds;
+			document.getElementById("sec").innerHTML=seconds;
+		}
+	</script>
+</div>
+</div>
+</div>
+</body>
